@@ -1,0 +1,248 @@
+/******************************Tag Selectors**********************************/
+body{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+h1{
+  margin-top: 19rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+h2{
+font-family: 'Poppins', sans-serif;
+font-size: 2.5rem;
+}
+
+/************************Classes(Section Wise)***********************************/
+/****************************Main paragraph**************************************/
+.main-p{
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+width: 35rem;
+margin: 0px auto 1px auto;
+}
+/***************************Header Section***********************************************/
+/***********************logo settings(Top left)*******************************/
+.logo-pos{
+  position: absolute;
+  top: 3rem;
+  left: 2.5rem;
+}
+/****************************Try it free (button settings(top right))******************/
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 0px 5px #666666;
+  -moz-box-shadow: 0px 0px 5px #666666;
+  box-shadow: 0px 0px 5px #666666;
+  font-family: Arial;
+  color: hsl(321, 100%, 78%);
+  font-size: 20px;
+  border-style: solid;
+  border-width: 2;
+  background: #ffffff;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #edcef0;
+  text-decoration: none;
+}
+.btn-pos{
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+/***************************Get started for free (button settings(center))******************/
+
+.btn-main {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 3px 9px #666666;
+  -moz-box-shadow: 0px 3px 9px #666666;
+  box-shadow: 0px 3px 9px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: hsl(322, 100%, 66%);
+  padding: 15px 65px 15px 65px;
+  border: solid hsl(322, 100%, 66%) 2px;
+  text-decoration: none;
+}
+
+.btn-main:hover {
+  background: #ed8aca;
+  text-decoration: none;
+}
+.btn-main-pos{
+position: relative;
+top: 4rem;
+}
+.header-p{
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+width: 38rem;
+margin: auto;
+}
+/******************************Screen Mockups(section)******************************/
+.screen-mockup{
+  margin-top: 11rem;
+}
+/*******************Communities and messages settings*******************************/
+.communities-count{
+font-size: 4rem;
+font-weight: 700;
+margin-bottom: 0rem;
+margin-top: 0rem;
+}
+.messages-count{
+font-size: 4rem;
+font-weight: 700;
+margin-top: 0rem;
+margin-bottom: 0rem;
+}
+.communities-pos{
+  position: absolute;
+  top: 92rem;
+  left: 5.5rem;
+}
+.messages-pos{
+position: absolute;
+top: 92rem;
+right: 3.5rem;
+}
+.icon-messages{
+  margin-right: 8rem;
+}
+.icon-communities{
+}
+
+/**************************Grow settings***********************************/
+.grow-bg-settings{
+  background-color: hsl(207, 100%, 98%);
+  margin-top: 21rem;
+  width: 1440px;
+}
+.grow-together{
+  margin-left: 6rem;
+  margin-top: 5.5rem;
+  float: left;
+  text-align: left;
+}
+.top-bottom-bgcolor{
+  background-color: white;
+}
+/****************************Flowing settings********************************************/
+.flowing-bg-settings{
+  margin: 6rem auto 6rem auto;
+}
+.flowing-conversations{
+  text-align: left;
+  float: right;
+  margin-top: 6rem;
+}
+/****************************Your User settings********************************************/
+.your-user-bg-settings{
+  background-color: hsl(207, 100%, 98%);
+  width: 1440px;
+}
+.your-user{
+  float: left;
+  margin-left: 6rem;
+  margin-top: 3.3rem;
+  text-align: left;
+}
+/****************************Ready to build (section)********************************************/
+.ready-to-build{
+  margin: 7rem auto 10rem auto;
+}
+.btn-secondary-pos{
+position: relative;
+top: 1.5rem;
+}
+/****************************footer settings********************************************/
+.footer-bgcolor{
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+  font-size: 0.80rem;
+  font-weight: 400;
+  width: 1440px;
+  height: 30rem;
+  text-align: left;
+}
+.footer-top-bgcolor{
+  background-color: white;
+}
+.address-section{
+  display: inline-block;
+  position: absolute;
+  left: 16rem;
+  width: 15rem;
+}
+.newsletter-section{
+  display: inline-block;
+position: absolute;
+right: 14rem;
+  width: 15rem;
+}
+.btn-subscribe{
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  background: hsl(321, 100%, 78%);
+  padding: 9px 20px 9px 20px;
+  text-decoration: none;
+}
+.btn-subscribe:hover {
+  background: #edaded;
+  text-decoration: none;
+}
+.btn-subscribe-pos{
+  position: relative;
+  left: 70rem;
+  top: 8.9rem;
+}
+.icon-setting{
+padding-right: 0.8rem;
+}
+.input-email{
+  height: 1.8rem;
+  width: 13rem;
+  border-radius: 0.5rem;
+}
+.fb-logo{
+  height: 2rem;
+  width: 2rem;
+background-color: white;
+border-radius: 8rem;
+}
+.insta-logo{
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  margin-top: 1rem;
+  border-radius: 8rem;
+}
+.twitter-logo{
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 8rem;
+}
+
+.attribution { font-size: 11px;
+position: absolute;
+top: 284rem; left: 34rem;}
+.attribution a { color: #0E3EDA; }
