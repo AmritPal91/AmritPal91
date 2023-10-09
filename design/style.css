@@ -1,38 +1,49 @@
-/******************************Tag Selectors**********************************/
-body{
-  margin: 0px;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+/* Tag Selectors */
+* {
+  box-sizing: border-box;
 }
-h1{
-  margin-top: 19rem;
+
+body,
+html {
+  color: hsl(192, 100%, 9%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 3.5% 5%;
+}
+
+h1 {
+  margin-top: 17rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 3rem;
-}
-h2{
-font-family: 'Poppins', sans-serif;
-font-size: 2.5rem;
-
+  padding: 0 2%;
 }
 
-/************************Classes(Section Wise)***********************************/
-/****************************Main paragraph**************************************/
-.main-p{
-  font-size: 1rem;
-  font-weight: 700;
-  color: hsl(192, 100%, 9%);
-width: 35rem;
-margin: 0px 1rem 1rem 0rem;
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
 }
-/***************************Header Section***********************************************/
-/***********************logo settings(Top left)*******************************/
-.logo-pos{
-  position: absolute;
-  top: 3rem;
-  left: 2.5rem;
+
+
+
+/*   Classes(Section Wise)  */
+.container {
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
 }
-/****************************Try it free (button settings(top right))******************/
+
+/* Header Section */
+
+/*   Try it free (button settings(top right))  */
 .btn {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
@@ -42,24 +53,30 @@ margin: 0px 1rem 1rem 0rem;
   box-shadow: 0px 0px 5px #666666;
   font-family: Arial;
   color: hsl(321, 100%, 78%);
-  font-size: 20px;
+  font-size: 1.3rem;
   border-style: solid;
   border-width: 2;
   background: #ffffff;
-  padding: 10px 30px 10px 30px;
+  padding: 0.7rem 3rem;
   text-decoration: none;
+
 }
 
 .btn:hover {
   background: #edcef0;
   text-decoration: none;
 }
-.btn-pos{
-  position: absolute;
-  top: 3rem;
-  right: 2rem;
+
+.header-p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  max-width: 37rem;
+  margin: 0 auto;
+  padding: 0 4%;
 }
-/***************************Get started for free (button settings(center))******************/
+
+/*  Get started for free (button settings(center) */
 
 .btn-main {
   -webkit-border-radius: 28;
@@ -70,9 +87,9 @@ margin: 0px 1rem 1rem 0rem;
   box-shadow: 0px 3px 9px #666666;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1rem;
   background: hsl(322, 100%, 66%);
-  padding: 15px 65px 15px 65px;
+  padding: 1rem 3rem;
   border: solid hsl(322, 100%, 66%) 2px;
   text-decoration: none;
 }
@@ -81,191 +98,274 @@ margin: 0px 1rem 1rem 0rem;
   background: #ed8aca;
   text-decoration: none;
 }
-.btn-main-pos{
-position: relative;
-top: 4rem;
+
+.btn-main-pos {
+  position: relative;
+  top: 4rem;
 }
-.header-p{
+
+/* Screen Mockups(section) */
+.screen-mockup {
+  margin-top: 11rem;
+}
+
+.screen-mockup-img {
+  width: 70vw;
+}
+
+/*   Communities and messages settings   */
+.user_data {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  padding: 10% 0;
+}
+
+.communities-count,
+.messages-count {
+  margin: 2% 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/*   Common Setting       */
+.flowing-conversations,
+.your-user,
+.grow-together {
+  text-align: left;
+  max-width: 50vh;
+}
+
+.main-p {
   font-size: 1rem;
   font-weight: 700;
   color: hsl(192, 100%, 9%);
-width: 38rem;
-margin: 0rem auto 0rem auto;
-}
-/******************************Screen Mockups(section)******************************/
-.screen-mockup{
-  margin-top: 11rem;
-}
-/*******************Communities and messages settings*******************************/
-.communities-count{
-font-size: 4rem;
-font-weight: 700;
-margin-bottom: 0rem;
-margin-top: 0rem;
-}
-.messages-count{
-font-size: 4rem;
-font-weight: 700;
-margin-top: 0rem;
-margin-bottom: 0rem;
-}
-.communities-pos{
-  position: absolute;
-  top: 92rem;
-  left: 18rem;
-}
-.messages-pos{
-position: absolute;
-top: 92rem;
-right: 16rem;
-}
-.icon-messages{
-  margin-right: 8rem;
-}
-.icon-communities{
-  margin-right: 6rem;
+  max-width: 100%;
 }
 
-/**************************Grow settings***********************************/
-.grow-bg-settings{
+.grow-bg-settings,
+.flowing-bg-settings,
+.your-user-bg-settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.grow-bg-settings,
+.your-user-bg-settings {
   background-color: hsl(207, 100%, 98%);
-  margin-top: 21rem;
-  width: 1440px;
-}
-.grow-together{
-  margin-left: 8rem;
-  margin-top: 5.5rem;
-  float: left;
-  text-align: left;
-}
-.grow-img{
-  height: 410px;
-  width: 500px;
-}
-.grow-img-pos{
-  display:inline-block;
 }
 
-.top-bottom-bgcolor{
+/*     Illustration image div     */
+.grow-img-pos,
+.your-users-img-pos,
+.flowing-img-pos {
+  max-width: 58vh;
+}
+
+img,
+picture {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.top-bottom-bgcolor {
   background-color: white;
+  width: 100vw;
 }
-/****************************Flowing settings********************************************/
-.flowing-bg-settings{
-  margin: 6rem auto 6rem auto;
+
+/*             Flowing settings                */
+.flowing-bg-settings {
+  padding: 10% 0;
 }
-.flowing-conversations{
-  text-align: left;
-  float: right;
-  margin-top: 6rem;
-  margin-right: 3rem;
+
+.ready-to-build {
+  /* padding: 15% 0; */
+  margin: 18% 0;
 }
-.flowing-img{
-  height: 356px;
-  width: 500px;
+.head-space{
+  margin-bottom: 4%;
 }
-/****************************Your User settings********************************************/
-.your-user-bg-settings{
-  background-color: hsl(207, 100%, 98%);
-  width: 1440px;
+
+.btn-secondary-pos {
+  margin-top: 10%;
 }
-.your-user{
-  float: left;
-  margin-left: 8rem;
-  margin-top: 3.3rem;
-  text-align: left;
-}
-.your-users-img{
-  height: 377px;
-  width: 500px;
-}
-.you-users-img-pos{
-  display: inline-block;
-}
-/****************************Ready to build (section)********************************************/
-.ready-to-build{
-  margin: 7rem auto 10rem 4rem;
-}
-.btn-secondary-pos{
-position: relative;
-top: 1.5rem;
-}
-/****************************footer settings********************************************/
-.footer-bgcolor{
+
+/*             Your User settings          */
+
+/*     footer settings      */
+.footer-bgcolor {
   background-color: hsl(192, 100%, 9%);
   color: hsl(207, 100%, 98%);
   font-size: 0.80rem;
   font-weight: 400;
-  width: 1440px;
-  height: 33rem;
+  height: auto;
   text-align: left;
 }
-.footer-top-bgcolor{
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-top-bgcolor {
   background-color: white;
+  width: 100vw;
 }
-.address-section{
-  display: inline-block;
-  position: absolute;
-  left: 16rem;
-  margin-top: 2.5rem;
+
+.address-section {
   width: 15rem;
 }
-.newsletter-section{
-  display: inline-block;
-position: absolute;
-right: 14rem;
-  margin-top: 2.5rem;
-  width: 15rem;
+
+.newsletter-section {
+  width: 20rem;
 }
-.btn-subscribe{
+
+.btn-subscribe {
   -webkit-border-radius: 7;
   -moz-border-radius: 7;
   border-radius: 7px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.7rem;
   background: hsl(321, 100%, 78%);
-  padding: 9px 20px 9px 20px;
+  padding: 0.6rem 1.5rem;
   text-decoration: none;
+  margin-left: 3%;
 }
+
 .btn-subscribe:hover {
   background: #edaded;
-  text-decoration: none;
 }
-.btn-subscribe-pos{
-  position: relative;
-  left: 70rem;
-  top: 11.5rem;
+
+.icon-setting {
+  padding-right: 0.8rem;
 }
-.icon-setting{
-padding-right: 0.8rem;
-}
-.input-email{
-  height: 1.8rem;
+
+.input-email {
+  height: 2.23rem;
   width: 13rem;
   border-radius: 0.5rem;
 }
-.fb-logo{
-  height: 2rem;
-  width: 2rem;
-background-color: white;
-border-radius: 8rem;
-}
-.insta-logo{
+
+.insta-logo,
+.twitter-logo,
+.fb-logo {
   height: 2rem;
   width: 2rem;
   background-color: white;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
   margin-top: 1rem;
   border-radius: 8rem;
 }
-.twitter-logo{
-  height: 2rem;
-  width: 2rem;
-  background-color: white;
-  border-radius: 8rem;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 2.5%;
 }
-.attribution { font-size: 11px;
-position: absolute;
-top: 285.5rem; left: 34rem;}
-.attribution a { color: #0E3EDA; }
+
+.attribution a {
+  color: #0E3EDA;
+}
+
+/* Mobile view */
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .logo {
+    height: 50%;
+    width: 42%;
+  }
+
+  nav {
+    padding: 6% 5%;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+    padding: 0.25rem 1rem;
+  }
+  .btn-main {
+  font-size: 0.8rem;
+  padding: 0.7rem 2rem;
+}
+
+  /*   Communities and messages settings   */
+  .user_data {
+    flex-direction: column-reverse;
+    padding: 15% 0;
+
+  }
+
+  .communities-pos {
+    margin-bottom: 12%;
+  }
+
+
+  h1 {
+    margin-top: 7rem;
+    font-size: 1.9rem;
+  }
+
+  /* Main paragraph  */
+  h2 {
+    font-size: 1.5rem;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .main-p {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  /* Common sec */
+  .grow-bg-settings,
+  .flowing-bg-settings,
+  .your-user-bg-settings {
+    /* justify-content: space-evenly; */
+    flex-direction: column-reverse;
+  }
+
+  .flowing-conversations {
+    order: 1;
+  }
+
+  .flowing-img-pos {
+    order: 2;
+  }
+  .head-space{
+  margin-bottom: 10%;
+}
+
+  /* Footer section */
+  .footer_container {
+    flex-direction: column-reverse;
+  }
+
+  .newsletter-section,
+  .address-section {
+    height: auto;
+    width: 100%;
+    padding: 5% 10%;
+  }
+
+  .input-email {
+    height: 2.23rem;
+    width: 100%;
+  }
+
+  .btn-subscribe {
+    margin: 3% 0 0 auto; 
+  }
+
+  .input_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
